@@ -94,7 +94,6 @@ func main() {
 		}
 	}
 
-	fmt.Println(validPartNums)
 	sum := 0
 	for _, validNum := range validPartNums {
 		sum += validNum.number
