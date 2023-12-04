@@ -85,7 +85,7 @@ func main() {
 
 	// Part 2
 	for _, card := range AllCards {
-		for i := card.CardNumber + 1; i < card.CardNumber+card.Matches+1; i++ {
+		for i := card.CardNumber + 1; i <= card.CardNumber+card.Matches; i++ {
 			NumberOfEachScratchcard[i] += NumberOfEachScratchcard[card.CardNumber]
 		}
 	}
